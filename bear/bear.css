@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background: url("https://cdn.pixabay.com/photo/2016/08/26/23/46/teddy-1623436__340.jpg") no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+h1, h2, a {
+    font-family: Lato;
+}
+
+p {
+    font-family: Arial;
+}
+
+.container {
+    max-width: 940px;
+    margin: auto;
+}
+
+.nav {
+    background: #332200;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: right;
+    z-index: 2;
+}
+
+.nav .container {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 6px 0;
+}
+
+.nav li {
+    border-radius: 4px;
+    color: #fff;
+    display: inline;
+    padding: 5px 8px;
+}
+
+li.navbar:hover {
+    background: #d2a479;
+    color:  #ecd8c6;
+}
+
+.header {   
+    height: 600px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.header .container {
+    position: relative;
+    top: 200px;
+}
+
+.header h1 {
+    color: hsla(60, 100%, 90%, 0.8);
+    font-size: 100px;
+}
+
+.main {
+    background: -webkit-repeating-radial-gradient(#ecd9c6, #d9b38c);
+    opacity: 0.9;
+    padding: 50px 1px 80px;
+    text-align: center;
+}
+
+.main .btn {
+    background-color: #bf8040;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    padding: 8px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a.btn:hover {
+    background: #d2a479;
+    color:  #ecd8c6;
+}
+
+.main p {
+    font-size: 12px;
+}
+
+.feature {
+    background: -webkit-repeating-linear-gradient(#cc8800, #603f20);
+    color: #ffcc66;
+    font-size: 20px;
+    opacity: 0.9;
+    padding: 50px 0 60px;
+}
+
+.feature ul {
+    list-style-type: none;
+}
+
+.content {
+    background: #fff;
+    font-size: 20px;
+    opacity: 0.8;
+    padding: 50px 0 60px;
+}
+
+.footer {
+    background: #332200;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}

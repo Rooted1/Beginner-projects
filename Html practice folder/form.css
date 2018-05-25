@@ -1,0 +1,20 @@
+.background-style {
+	background-color: orange;
+}
+	p {
+		font-size: 20px;
+		color: green;
+		font-family: sans-serif;
+	}
+		.text-center {
+			text-align: center;
+		}
+
+			h2 {
+				font-family: Sans-serif;
+				text-decoration-color: blue;
+				font-size: 40px;
+				font-style: oblique;
+			}
+
+

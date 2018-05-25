@@ -1,0 +1,6 @@
+function randomQuotes(){
+var quotes = ["Being on top of the world doesn't mean anything unless you know what it's like to be at the bottom.", "There are no perfect man in the world, only perfect intentions.", "Here's to the moments when we didn't think about right or wrong; where we just lived crossed our fingers and hoped for the best", "The truth is hard to swallow when you're choked with pride", "People say that before you die, your life flashes before your eyes.", "I'm not changing who I am, I'm just finally figuring it out.", "Dreaming of the person you want to be is the person you already are.", "Sometimes we expect more from others, cause we would be willing to do that much for them.", "Sometimes you just want to yell it outnto the world..but then you're scared they might hear you.", "You have to know how to accept rejection and reject acceptance.", "Most people run deep down, they want to be chased."];
+var newQuotes = quotes[Math.floor(Math.random() * quotes.length + 1;
+//document.write(newQuotes);
+document.getElementById("id_name").innerHTML=newQuotes;
+};

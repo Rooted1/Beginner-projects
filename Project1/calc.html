@@ -1,0 +1,68 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>calc machine</title>
+        <!-- <script src="index.js"></script> -->
+        <link href="calc.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            function doCalc(){
+            // get num1
+            var firstNumber = parseInt($(".num1").val());//without the parseInt(), this wont work becos the input is received as a string
+            //get num2
+            var secondNumber = parseInt($(".num2").val());
+            //get sign
+            var sign = $(".num_sign").val();
+            //calculate
+            var result = 0;
+            // console.log(sign, num1, num2);
+                if(sign === "+"){
+                    result = firstNumber + secondNumber;
+                // console.log("from docalc", result);
+                } else if(sign === "-"){
+                    result = firstNumber - secondNumber;
+                } else if(sign === "*"){
+                    result = firstNumber * secondNumber;
+                } else if(sign === "/"){
+                    result = firstNumber / secondNumber;
+                }
+                return result;//to.Precision(3); no of places. used in case of decimals if result is infinite
+            };
+            //click event
+            $(".calc_btn").click(function(){ //you may not include parameter(s)
+                //show result
+                var displayTheResult = doCalc(); //this is the code block that runs when the button is clicked
+                // console.log(displayTheResult);
+                    $(".result").val(displayTheResult);
+            });
+
+        });
+    </script>
+        
+    </head>
+    <body>
+        
+        <div id="box">
+        <div id="view">
+             <input type="text" class="num num1" />
+             <select class="num_sign">
+                    <option></option>
+                    <option>+</option>
+                    <option>-</option>
+                    <option>*</option>
+                    <option>/</option>
+                </select>
+            <input type="text" class="num num2">
+            <span><strong>=</strong></span>
+            <input class="result" value="result" disabled>
+           
+            <div><button class="calc_btn">Calculate</button></div>
+             </div>
+        </div>
+        
+
+    </body>
+</html>

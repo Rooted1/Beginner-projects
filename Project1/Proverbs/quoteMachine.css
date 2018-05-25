@@ -1,0 +1,63 @@
+body {
+    background-image: url(https://pixabay.com/static/uploads/photo/2012/03/01/15/47/abstract-20445__180.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#button_style {
+    border-radius: 7px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    display: inline-block;
+    margin-left: 40%;
+    padding: 8px 15px;
+    text-align: center;
+    text-shadow: 2px 2px 5px gray;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Courier New;
+}
+
+/*a class to design the new quote button*/
+#paragraph-id {
+    text-align: center;
+    margin: 50px;
+    font-family: Consolas;
+    color: navy;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*formatting the h1 header*/
+h1 {
+    font-family: Comic Sans MS;
+    font-size: 40px;
+    color: aquamarine;
+    text-align: center;
+}
+
+/*formatting the div box*/
+div {
+    background-color: antiquewhite;
+    border: 10px solid transparent;
+    -webkit-border-image: url(https://media-public.canva.com/MABfNP_hJ6E/1/thumbnail.png) 30 round; 
+    -o-border-image: url(https://media-public.canva.com/MABfNP_hJ6E/1/thumbnail.png) 30 round; 
+    border-image: url(https://media-public.canva.com/MABfNP_hJ6E/1/thumbnail.png 30 round);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 50px;
+    padding: 25px;
+    position: relative;
+    text-align: center;
+    
+}
+
+/*add an event on hover that will show text when mouse is on bird*/
+#tweetQuote {
+    float: left;
+    margin-top: 20px;
+    /*margin-right: 70px;*/
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+}

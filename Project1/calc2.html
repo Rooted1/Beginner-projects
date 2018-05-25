@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>My first Calculator</title>
+       
+        <link href="calc.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    </head>
+    <body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+    function docalc(){
+    var firstNumber = parseInt($(".num1").val());
+    // console.log(firstNumber);
+    // alert("It worked!");
+    var secondNumber = parseInt($(".num2").val());
+    // console.log(secondNumber);
+    var sign = $(".sign").val();
+    // console.log(sign);
+    var result = 0;
+    switch(sign){
+        case "+": 
+        result = firstNumber + secondNumber;
+        // console.log("hvghgv"+result);
+        break;
+        
+        case "-":
+        result = firstNumber - secondNumber;
+        break;
+        
+        case "*":
+        result = firstNumber * secondNumber;
+        break;
+        
+        case "/":
+        result = firstNumber / secondNumber;
+        break;
+    }   
+    // console.log(result);
+    return result;
+    }
+    
+    $(".calc").click(function(){
+        // alert(docalc());
+        $(".result").val(docalc());
+    });
+    
+});
+
+
+
+
+
+
+    </script>
+        <div>
+            <input type="text" class="num num1">
+            <select class="sign">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>
+            <input type="text" class="num num2">
+            <span>=</span>
+            <input type="text" class="num result" disabled>
+            <button class="calc">Calculate</button>
+        </div>
+
+    </body>
+</html>

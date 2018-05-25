@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Random Quotes</title>
+        <link href="quoteMachine.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <h1>Random Qoutes Machine</h1>
+        <p id="paragraph-id">These are random quotes that have been rewritten for you to look through and get you inspired. Click on the button below to get them randomly.</p>
+        
+        <div id="divId">
+            "The people who are crazy enough to think they can change the world are the ones who do." 
+          <br>
+          -- Steve Jobs
+            <!--this div will take quote text to be displayed on the webpage--> 
+            <a class="twitter-share-button tweetQuote" href="https://twitter.com/intent/tweet?text=Such%20a%20great%20quote%20you%20should%20read%20today." title="tweet this quote"><i class="fa fa-twitter"></i></a>
+        </div>
+        <input type="button" id="button_style" value="New Quote" onclick="randomQuotes();" /><!--when I click on this button, text should appear below-->
+        
+        <footer>Created by Ruth Obe &copy; 2016</footer>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="quotemachine.js"></script>
+    </body>
+    
+</html>

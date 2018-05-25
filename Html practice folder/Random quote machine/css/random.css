@@ -1,0 +1,29 @@
+/*general formatting of the body*/
+body {
+    background-color: #f2f2f2;
+}
+
+/*a class to design the new quote button*/
+#parargraph-id {
+    text-align: center;
+    margin:;
+}
+
+/*formatting the h1 header*/
+h1 {
+    font-family: ;
+    font-size:;
+    text-align: center;
+}
+
+/*formatting the div box*/
+div {
+    border-radius: 12px;
+    box-shadow: ;
+    color: white;
+    margin:;
+    padding:;
+    position: center;
+    text-align: center;
+    
+}

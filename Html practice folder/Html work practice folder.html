@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+				<title>
+						My blog practice with html
+				</title>
+
+		</head>
+				<style>
+						body {
+							background-color: brown;
+						}
+						h1 {
+							color: green !important;
+							font-family: Monospace;
+							font-size: 50px;
+						}
+
+							.class-style {
+								font-family: Lobster, Verdana, Sans-serif;
+								font-color: cyan;
+								font-size: 15px;
+							}
+							.style-HTML {
+								color: blue;
+								font-size: 15px;
+								font-family: sans-serif;
+
+							}
+							.style-div {
+								color: blue;
+								background-color: white;
+								background-color: green !important;
+								color: brown !important;
+
+							}
+							.next-line {
+								display: block;
+							}
+							p > span {
+								color: yellow;
+								font-style: thick;
+								font-size: 15px;
+								font-family: Verdana;
+							}
+				</style>
+
+
+		<body class="class-style">
+				<h1 style="color:blue"> Learning html</h1>
+
+					<a href="https://www.google.com.ng/search?q=why+learn+HTML%3F&espv=2&source=lnms&tbm=isch&sa=X&ved=0ahUKEwju4L--mvrOAhUMBsAKHc3-BmgQ_AUICSgC&biw=1517&bih=665&dpr=0.9#imgrc=mQAHmAtnnOIIHM%3A" >
+					 				<img style="color: Orchid" src="https://www.google.com.ng/search?q=why+learn+HTML%3F&espv=2&source=lnms&tbm=isch&sa=X&ved=0ahUKEwju4L--mvrOAhUMBsAKHc3-BmgQ_AUICSgC&biw=1517&bih=665&dpr=0.9#imgrc=mQAHmAtnnOIIHM%3A" alt="HTML is the skeleton of webpages" >
+					</a>
+
+						<p class="style-HTML">HTML is the short way of calling the long texts <span>HyperText Markup Language</span>.
+						 <!-- this took me to a new line. I also wanted to make a general style for the first p tags, but the effect was only effective on the texts that come before the second p tags for the html styling.-->
+						It is a basic language that everyone who aspires to become a computer programmer should learn regardless of the field of Computer Science they might eventually want to venture into.
+						HTML is actually the language that allows you to input words into your blog, website, apps, or what have you and this is more of the reason why it is called HyperText.</p>
+
+						<!-- just one question. Let's assume I have a paragraph of texts, cAn I style a word or more in that paragraph using the class design format or the inline design format? Like take for example, if I want to design a paragraph or header with css, I can do that using the inline or the other way, but what if I do not want to style all the words in a paragraph, but just few? Probably I want to give it color of its own or font-style of its own.
+						Answer: You can make a paragraph for the words you want to style and then make a class to design paragraph or you do the inline style for the words like: <span style="color:blue">  -->
+
+						<p class="style-HTML" >You can do a lot with HTML some of which are listed below:</p><!-- I tried adding inline css to this paragraph, but it wasnot effective-->
+					<div class="style-div" >
+						<ul style="font-color: brown ">
+							<li>Adding Image</li>
+							<li>making an image a clickable one</li>
+							<li>Resizing an image</li>
+							<li>Styling text with css</li>
+							
+						</ul>
+					</div>
+
+							<p style="color: Fuchsia">
+								There is an aspect of programming that allows you to style i.e. design texts in your html file and make it colorful. This aspect mostly called CSS fully known as Cascading Style Sheet.
+								Html text can be style in two ways, which are listed below:
+								<ol >
+									<li>By directly adding the css styling tags in the html file, which is otherwise known as <strong><em>inline styling</em></strong></li>
+									<li>By styling in a separate css file</li>
+								</ol>
+							</p> <!-- you can elaborate more on the above point-->
+							<h2>Class declaration</h2>
+
+	<p>Pls fill out this short form</p>
+	<form = action="/www.facebook.com">
+
+<p>Names</p>
+		<input type="text" placeholder="Firstname" required> 
+		<input type="text" placeholder="Surname" required>
+
+<p>Date</p>
+		<input type="text" placeholder="Today's date" required>
+
+<p>gender</p>
+		<label class="next-line"><input type="radio" name="male-female" required>Male</label>
+		<label class="next-line"><input type="radio" name="male-female" required>Female</label>
+
+<p>Department</p>
+		<input type="text" placeholder="type in your department" required>
+
+<p>Select the games you like to play from the list of games</p>
+		<label class="next-line"><input type="checkbox" name="favoritegames">Sudoku</label>
+		<label class="next-line"><input type="checkbox" name="favoritegames">Chess</label>
+		<label class="next-line"><input type="checkbox" name="favoritegames">Snakes and Ladders</label>
+		<label class="next-line"><input type="checkbox" name="favoritegames">monopoly</label>
+
+		<button type="submit">Submit</button>
+	</form>
+		</body>
+	</html>
